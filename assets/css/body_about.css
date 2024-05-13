@@ -1,0 +1,66 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../images/bgguitars.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+main {
+    width: inherit;
+    height: calc(100vh - 150px);
+}
+
+main .container {
+    flex-direction: column;
+}
+
+.presentation {
+    max-width: 800px;
+    padding: 0 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(0, 0%, 0%, 0.637);
+    border-radius: 5px;
+}
+
+.presentation .title-about {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    font-size: 4rem;
+    padding: 30px 0;
+    text-shadow: 1px 1px 4px #333;
+    text-align: justify;
+}
+
+.presentation .text-about {
+    color: #ddd;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+}
+
+main .container button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    background-color: hsla(0, 0%, 0%, 0.637);
+    color: #ddd;
+    border: 1px solid #888;
+}
+
+main .container button:hover {
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+main .container button:active {
+    opacity: 70%;
+}
